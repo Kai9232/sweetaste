@@ -1,0 +1,231 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto ;
+}
+/* All */
+body {
+    font-family: Arial, 'Noto Sans TC', serif;
+}
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+a {
+    color: #3F5D45;
+    text-decoration: none;
+}
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+h1 a {
+    display: block;
+    background: url('../images/logo-all-dark.svg') no-repeat;
+    width: 220px;
+    height: 40px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menu {
+    display: flex;
+}
+.menu li a {
+    display: block;
+    padding: 0 30px;
+}
+.fa-solid {
+    color: #3F5D45;
+}
+.menu li a:hover {
+    color: #FFE180;
+    font-weight: 600;
+}
+/* BANNER */
+.banner img {
+    display: block;
+    margin-bottom: 60px;
+}
+/* ASIDE */
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+.aside {
+    width: 32%;
+}
+.aside h2 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 65px;
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+.aside li {
+    margin-bottom: -1px;
+}
+.aside a {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    line-height: 65px;
+    color: #3F5D45;
+    border: 1px solid #EAF0ED;
+}
+.aside a:hover, .aside a.active {
+    background-color: #EAF0ED;
+    font-weight: 600;
+}
+/* PRODUCTLIST */
+.productlist {
+    width: 66%;
+}
+.productlist_card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.productlist_card li {
+    position: relative;
+    width: 48.5%;
+    margin-bottom: 20px;
+}
+.productlist_card .tag {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    background-color: #3F5D45;
+    color: #EAF0ED;
+    writing-mode: vertical-lr;
+    letter-spacing: 5px;
+    padding: 10px;
+}
+.productlist_card .heart {
+    position: absolute;
+    top: 19px;
+    right: 22px;
+    color: #3F5D45;
+    font-size: 18px;
+    cursor: pointer;
+}
+.productlist_card .heartclick {
+    display: none;
+    position: absolute;
+    top: 19px;
+    right: 22px;
+    color: #3F5D45;
+    font-size: 18px;
+    cursor: pointer;
+}
+.productlist_card img {
+    display: block;
+}
+.productlist_card_body {
+    display: flex;
+    border: 1px solid #EAF0ED;
+    line-height: 56px;
+}
+.productlist_card_body h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #3F5D45;
+    width: 58%;
+    border-right: 1px solid #EAF0ED;
+}
+.productlist_card_body span {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #3F5D45;
+    width: 42%;
+}
+.cart {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    line-height: 65px;
+    background-color: #EAF0ED;
+    color: #3F5D45;
+}
+.cart:hover {
+    font-weight: 600;
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+/* PAGEBUTTON */
+.page_button .button {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+}
+.button li {
+    margin-left: -1px;
+}
+.button li a {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    color: #3F5D45;
+    border: 1px solid #EAF0ED;
+}
+.button li a.active {
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
